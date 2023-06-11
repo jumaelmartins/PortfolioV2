@@ -1,0 +1,22 @@
+grid: 12c
+
+Font: IBM Plex Sans
+
+Cores: 
+
+B-1 : #B8DEFF;
+B-3 : #99CCFF;
+B-8 : #3D7FCC;
+B-10: #1F61AD;
+B-13: #003B80;
+
+G-1: #F5F5F5;
+G-2: #EBEBEB;
+G-3: #E0E0E0;
+G-4: #CCCCCC;
+G-7: #8F8F8F;
+G-9: #666666;
+G-10: #525252;
+G-11: #3D3D3D;
+G-13: #141414;
+GRAY: #D9D9D9;
