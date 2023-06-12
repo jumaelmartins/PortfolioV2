@@ -1,5 +1,9 @@
+import Inicio from "./pages/Inicio";
+
 const App = () => {
-  return <div>Teste</div>;
+  return (
+    <Inicio/>
+  )
 };
 
 export default App;
