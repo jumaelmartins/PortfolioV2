@@ -1,0 +1,34 @@
+@use "./variables";
+
+.card {
+    padding: 10rem 5rem 2rem 5rem;
+    width: 36rem;
+    height: 32rem;
+    border-radius: 3.2rem;
+    @include variables.flex(column, nowrap, 2rem);
+    position: relative;
+    background: variables.$g-1;
+    box-shadow: .1rem 0 5rem 0 variables.$gray;
+    
+    &:hover {
+        z-index: 3;
+    }
+    svg {
+        top: 2rem;
+        position: absolute;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+        font-weight: bold;
+        color: variables.$g-13;
+        margin: 0;
+        height: 3rem;
+    }
+
+    p {
+        margin: 0;
+        font-size: 1.6rem;
+        color: variables.$g-10;
+    }
+}

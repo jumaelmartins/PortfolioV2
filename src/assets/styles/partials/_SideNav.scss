@@ -8,6 +8,7 @@ aside {
     box-shadow: .1rem 0 1rem .1rem variables.$gray;
     right: 5%;
     top: 31rem;
+    z-index: 2;
 
     ul {
         @include variables.flex(column, nowrap, 2rem)

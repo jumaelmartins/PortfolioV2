@@ -3,12 +3,12 @@
 
 #inicio{
     padding: 0 5%;
-    :nth-child(1) {
+    .inicio--title {
         display: flex;
         gap: 8rem;   
     }
 
-    img {
+    .avatar {
         margin-top: 23rem;
         width: 40rem;
         height: 40rem;
@@ -18,3 +18,32 @@
     }
 }
 
+.inicio--card {
+    margin-top: 20rem;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+        position: relative;
+    }
+}
+
+.stroke-1, .stroke-2 {
+    position: absolute;
+    z-index: 4;
+    height: 2rem;
+        width: 17rem;
+        background: variables.$B-13;
+
+    
+}
+
+.stroke-1 {
+    left: -17rem;
+    top: 8rem;
+}
+
+.stroke-2 {
+    right: -17rem;
+    bottom: 8rem;
+}
