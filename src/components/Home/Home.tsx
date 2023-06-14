@@ -1,3 +1,4 @@
+import Avatar from "./Avatar/Avatar";
 import Title from "./Title/Title";
 
 const Home = () => {
@@ -5,14 +6,12 @@ const Home = () => {
     <section id="inicio">
         <div>
             <Title/>
+            <Avatar/>
         </div>
         <ul>
             <li>1</li>
             <li>2</li>
             <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
         </ul>
     </section>
   )

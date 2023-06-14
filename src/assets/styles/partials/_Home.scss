@@ -1,6 +1,20 @@
-
+@use "./variables";
 
 
 #inicio{
     padding: 0 5%;
+    :nth-child(1) {
+        display: flex;
+        gap: 8rem;   
+    }
+
+    img {
+        margin-top: 23rem;
+        width: 40rem;
+        height: 40rem;
+        border-radius: 100%;
+        background: variables.$g-1;
+        border: .1rem solid variables.$g-4;
+    }
 }
+
