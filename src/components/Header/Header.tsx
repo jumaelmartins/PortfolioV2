@@ -7,9 +7,9 @@ import WhatsApp from "../Icons/WhatsApp";
 const Header = () => {
   return (  
     <header className="header">
-      <div className="logo">
+      <span className="logo">
         <Logo/>
-      </div>
+      </span>
       <nav className="header__navbar-container">
         <ul>
           <li><a href="">Inicio</a></li>
