@@ -1,0 +1,26 @@
+
+
+/***/
+
+$B-1: #b8deff;
+$B-3: #99ccff;
+$B-8: #3d7fcc;
+$B-10: #1f61ad;
+$B-13: #003b80;
+$g-1: #f5f5f5;
+$g-2: #ebebeb;
+$g-3: #e0e0e0;
+$g-4: #cccccc;
+$g-7: #8f8f8f;
+$g-9: #666666;
+$g-10: #525252;
+$g-11: #3d3d3d;
+$g-13: #141414;
+$gray: #d9d9d9;
+/**/
+
+@mixin flex ($direction, $wrap, $gap) {
+    display: flex;
+    flex-flow: $direction $wrap;
+    gap: $gap;
+}

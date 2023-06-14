@@ -1,24 +1,30 @@
-import Logo from "../icons/Logo";
+import GitHub from "../Icons/GitHub";
+import Linkedin from "../Icons/Linkedin";
+import Logo from "../Icons/Logo";
+import Moon from "../Icons/Moon";
+import WhatsApp from "../Icons/WhatsApp";
 
 const Header = () => {
-  return (
-    <header>
+  return (  
+    <header className="header">
       <div className="logo">
         <Logo/>
       </div>
-      <nav>
+      <nav className="header__navbar-container">
         <ul>
-          <li><a href="">INICIO</a><a href="">SOBRE</a><a href="">PROJETOS</a></li>
+          <li><a href="">Inicio</a></li>
+          <li><a href="">Sobre</a></li>
+          <li><a href="">Projetos</a></li>
         </ul>
       </nav>
-      <div>
+      <div className="header__contacts-links">
         <ul>
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <li><a href=""><GitHub/></a></li>
+          <li><a href=""><Linkedin/></a></li>
+          <li><a href=""><WhatsApp/></a></li>
         </ul>
-        <i>
-          icone
+        <i className="toggle-theme">
+          <Moon/>
         </i>
       </div>
     </header>

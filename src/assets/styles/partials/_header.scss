@@ -1,0 +1,46 @@
+@use "./variables";
+
+.header {
+  background: variables.$g-1;
+  @include variables.flex(row, nowrap, "");
+  height: 8rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.header__navbar-container > ul {
+  @include variables.flex(row, nowrap, 2rem);
+}
+
+.header__navbar-container > ul > li > a {
+  font-size: 2rem;
+  color: variables.$g-13;
+  position: relative;
+  transition: all 1s;
+
+  &:hover {
+    &::after {
+      position: absolute;
+      content: "";
+      height: 0.8rem;
+      width: 100%;
+      bottom: -0.8rem;
+      left: 0;
+      background: variables.$g-13;
+    }
+  }
+}
+
+.header__contacts-links {
+  @include variables.flex(row, nowrap, 10rem);
+  align-items: center;
+}
+
+.header__contacts-links > ul {
+  @include variables.flex(row, nowrap, 2rem);
+  background: variables.$B-13;
+  padding: 1rem 2rem;
+  border-radius: 20rem;
+  border: 0.4rem solid #fff;
+}
