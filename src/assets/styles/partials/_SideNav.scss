@@ -1,0 +1,15 @@
+@use "./variables";
+
+aside {
+    position: fixed;
+    background: variables.$g-1;
+    padding: 3rem 2rem;
+    border-radius: 20rem;
+    box-shadow: .1rem 0 1rem .1rem variables.$gray;
+    right: 5%;
+    top: 31rem;
+
+    ul {
+        @include variables.flex(column, nowrap, 2rem)
+    }
+}
