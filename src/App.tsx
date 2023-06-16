@@ -1,9 +1,13 @@
 import Inicio from "./pages/Inicio";
+import Sobre from "./pages/Sobre";
 
 const App = () => {
   return (
-    <Inicio/>
-  )
+    <>
+      <Inicio />
+      <Sobre />
+    </>
+  );
 };
 
 export default App;

@@ -1,49 +1,48 @@
 @use "./variables";
 
+#inicio {
+  padding: 0 5% 8rem 5%;
+  .inicio--title {
+    display: flex;
+    gap: 8rem;
+  }
 
-#inicio{
-    padding: 0 5%;
-    .inicio--title {
-        display: flex;
-        gap: 8rem;   
-    }
-
-    .avatar {
-        margin-top: 23rem;
-        width: 40rem;
-        height: 40rem;
-        border-radius: 100%;
-        background: variables.$g-1;
-        border: .1rem solid variables.$g-4;
-    }
+  .avatar {
+    margin-top: 23rem;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 100%;
+    background: variables.$g-1;
+    border: 0.1rem solid variables.$g-4;
+  }
 }
 
 .inicio--card {
-    margin-top: 20rem;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 20rem;
+  display: flex;
+  justify-content: space-between;
 
-    li {
-        position: relative;
-    }
+  li {
+    position: relative;
+  }
 }
 
-.stroke-1, .stroke-2 {
-    position: absolute;
-    z-index: 4;
-    height: 2rem;
-        width: 17rem;
-        background: variables.$B-13;
-
-    
+.stroke-1,
+.stroke-2 {
+  position: absolute;
+  z-index: 4;
+  height: 2rem;
+  width: 17rem;
+  background: variables.$B-13;
+  z-index: -1;
 }
 
 .stroke-1 {
-    left: -17rem;
-    top: 8rem;
+  left: -17rem;
+  top: 8rem;
 }
 
 .stroke-2 {
-    right: -17rem;
-    bottom: 8rem;
+  right: -17rem;
+  bottom: 8rem;
 }
