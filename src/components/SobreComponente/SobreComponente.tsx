@@ -1,4 +1,7 @@
 import Title from "../Title/Title";
+import ExperienciaProfissional from "./ExperienciaProfissional/ExperienciaProfissional";
+import FormacaoAcademica from "./FormacaoAcademica/FormacaoAcademica";
+import Habilidades from "./Habilidades/Habilidades";
 
 const SobreComponente = () => {
   return (
@@ -6,25 +9,18 @@ const SobreComponente = () => {
       <Title content="SOBRE" />
       <div>
         <section>
-          <div>
-            <h3>Habilidades</h3>
-            <p>Já utilizo com maestria</p>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JAVASCRIPT</li>
-              <li>SASS</li>
-              <li>GITHUB</li>
-            </ul>
-            <h3>Aprendendo</h3>
-            <ul>
-              <li>TYPESCRIPT</li>
-              <li>REACT</li>
-              <li>NODEJS</li>
-            </ul>
-          </div>
+          <Habilidades />
+          <ExperienciaProfissional />
+          <FormacaoAcademica />
         </section>
-        <section></section>
+        <section>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non rem
+            libero, quam minima nemo dolore mollitia dolorem natus, temporibus
+            harum numquam laborum eveniet tenetur labore doloremque optio
+            laudantium quidem incidunt.
+          </p>
+        </section>
       </div>
     </section>
   );
