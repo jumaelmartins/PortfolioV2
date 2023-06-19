@@ -1,0 +1,81 @@
+@use "./variables";
+
+
+#sobre {
+    @include variables.flex(column, nowrap, "");
+    background: variables.$g-1;
+    padding: 5%;
+}
+
+#sobre > h2 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.sobre--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sobre--content--experiencias {
+    margin-top: 28rem;
+    h3, h4 {
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+}
+
+.habilidades--dominadas, .habilidades--aprendendo {
+    @include variables.flex(row, nowrap, 1rem);
+}
+
+.habilidades--dominadas--container{
+    margin: 4rem 0 2rem 0;
+}
+
+.experiencia--profissional {
+    margin-top: 7rem;
+    width: 30rem;
+
+    ul > li {
+        display: flex;
+        align-items: center;
+        margin: 1.5rem 0;
+
+        .pasta--icone {
+            height: 6.4rem;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                height: 3rem;
+                width: .2rem;
+                background: gray;
+                bottom: -2.4rem;
+                left: 47%;
+            }
+        }
+
+        div {
+            @include variables.flex(column, nowrap, "");
+            justify-content: space-between;
+            height: 5rem;
+        }
+    }
+    
+}
+
+.cargo {
+    font-size: 1.6rem;
+}
+
+.empresa {
+    font-size: 1.2rem;
+}
+
+.sobre--content--resumo {
+    margin-top: 8rem;
+}

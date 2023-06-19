@@ -36,17 +36,21 @@ const ExperienciaProfissional = () => {
   };
 
   return (
-    <div>
+    <div className="experiencia--profissional">
       <h3>Experiencia Profissional</h3>
+      <ul>
       {experiencia.experiencia.map((experiencia) => (
         <li>
-          <SuitCaseIcon/>
+          <div className="pasta--icone">
+            <SuitCaseIcon/>
+          </div>
           <div>
-            <h5>{experiencia.cargo} <b>({experiencia.inicio} - {experiencia.fim})</b></h5>
-            <p>{experiencia.empresa}</p>
+            <h5 className="cargo">{experiencia.cargo} <b>({experiencia.inicio} - {experiencia.fim})</b></h5>
+            <p className="empresa">{experiencia.empresa}</p>
           </div>
         </li>
       ))}
+      </ul>
     </div>
   );
 };

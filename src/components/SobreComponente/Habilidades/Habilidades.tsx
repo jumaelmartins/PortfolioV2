@@ -7,18 +7,22 @@ const Habilidades = () => {
   return (
     <div className="habilidades">
       <h3>Habilidades</h3>
-      <p>Já utilizo com maestria</p>
-      <ul>
-        {habilidades.dominadas.map((habilidade) => (
-          <li>{habilidade}</li>
-        ))}
-      </ul>
-      <h3>Aprendendo</h3>
-      <ul>
-        {habilidades.aprendendo.map((habilidade) => (
-          <li>{habilidade}</li>
-        ))}
-      </ul>
+      <div className="habilidades--dominadas--container">
+        <h3>Já utilizo com maestria</h3>
+        <ul className="habilidades--dominadas">
+          {habilidades.dominadas.map((habilidade) => (
+            <li>{habilidade}</li>
+          ))}
+        </ul>
+      </div>
+      <div className="habilidades--aprendendo--container">
+        <h3>Aprendendo</h3>
+        <ul className="habilidades--aprendendo">
+          {habilidades.aprendendo.map((habilidade) => (
+            <li>{habilidade}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
