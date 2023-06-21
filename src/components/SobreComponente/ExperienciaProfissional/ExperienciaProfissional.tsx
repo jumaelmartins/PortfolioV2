@@ -1,5 +1,4 @@
-import React from "react";
-import SuitCaseIcon from "../../Icons/SuitCaseIcon";
+import SuitCaseIcon from "../../icons/SuitCaseIcon";
 
 const ExperienciaProfissional = () => {
   const experiencia = {

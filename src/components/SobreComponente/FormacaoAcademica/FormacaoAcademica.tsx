@@ -1,4 +1,4 @@
-import GraduationIcon from "../../Icons/GraduationIcon";
+import GraduationIcon from "../../icons/GraduationIcon";
 
 const FormacaoAcademica = () => {
   const formacao = {
@@ -21,22 +21,26 @@ const FormacaoAcademica = () => {
   };
 
   return (
-    <div>
+    <div className="formacao-academica-container">
       <h3>Formacao Academica</h3>
+      <ul>
       {formacao.formacao.map((formacao) => (
         <li>
           <div>
-            <h5>
+            <h5 className="curso">
               {formacao.curso}{" "}
               <b>
                 ({formacao.inicio} - {formacao.fim})
               </b>
             </h5>
-            <p>{formacao.instituicao}</p>
+            <p className="instituicao">{formacao.instituicao}</p>
           </div>
-          <GraduationIcon />
+          <div className="graduation-icon">
+            <GraduationIcon/>
+          </div>
         </li>
       ))}
+      </ul>
     </div>
   );
 };

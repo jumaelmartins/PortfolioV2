@@ -44,6 +44,7 @@
         display: flex;
         align-items: center;
         margin: 1.5rem 0;
+        gap: 1rem;
 
         .pasta--icone {
             height: 6.4rem;
@@ -58,21 +59,45 @@
                 left: 47%;
             }
         }
-
-        div {
-            @include variables.flex(column, nowrap, "");
-            justify-content: space-between;
-            height: 5rem;
-        }
     }
     
 }
 
-.cargo {
+.formacao-academica-container {
+    margin-top: 8rem;
+    width: 30rem;
+
+    ul > li {
+        display: flex;
+        align-items: center;
+        margin: 1.5rem 0;
+        gap: 1rem;
+        
+        .graduation-icon {
+            display: flex;
+            align-items: flex-start;
+            // height: 6.4rem;
+            position: relative;
+            padding-bottom: 3.2rem;
+            &::after {
+                content: "";
+                position: absolute;
+                height: 8.5rem;
+                width: .2rem;
+                background: gray;
+                bottom: -3.4rem;
+                left: 47%;
+            }
+
+        }
+    }
+}
+
+.cargo, .curso {
     font-size: 1.6rem;
 }
 
-.empresa {
+.empresa, .instituicao {
     font-size: 1.2rem;
 }
 
