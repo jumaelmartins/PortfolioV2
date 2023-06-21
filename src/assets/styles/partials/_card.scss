@@ -9,6 +9,7 @@
     position: relative;
     background: variables.$g-1;
     box-shadow: .1rem 0 5rem 0 variables.$gray;
+
     
     &:hover {
         z-index: 3;
@@ -29,6 +30,41 @@
     p {
         margin: 0;
         font-size: 1.6rem;
+        color: variables.$g-10;
+    }
+}
+
+.card--sobre {
+    padding: 0;
+    width: 40rem;
+    height: 26rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+
+    svg {
+        left: 65%;
+        top: 35%;
+        position: absolute;
+    }
+
+    h3 {
+        display: flex;
+        align-items: center;
+        font-size: 8rem;
+        height: 8rem;
+        color: variables.$g-13;
+    }
+
+    p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.4rem;
+        font-weight: bold;
         color: variables.$g-10;
     }
 }

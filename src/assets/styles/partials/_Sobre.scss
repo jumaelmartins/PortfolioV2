@@ -102,5 +102,27 @@
 }
 
 .sobre--content--resumo {
+    @include variables.flex(column, nowrap, 1rem);
+    align-items: flex-end;
     margin-top: 8rem;
+    p {
+        font-size: 2rem;
+        width: 51rem;
+    }
+}
+
+.sobre--card-container {
+    margin-top: 8rem;
+    background:  url("/src/assets/icons/Group-50.svg") no-repeat 7rem center;
+    height: 968px;
+    width: 620px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card-2 {
+    align-self: flex-start;
 }
