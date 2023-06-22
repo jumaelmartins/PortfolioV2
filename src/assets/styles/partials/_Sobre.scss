@@ -3,7 +3,7 @@
 
 #sobre {
     @include variables.flex(column, nowrap, "");
-    background: variables.$g-1;
+    background: variables.$g-3;
     padding: 5%;
 }
 
