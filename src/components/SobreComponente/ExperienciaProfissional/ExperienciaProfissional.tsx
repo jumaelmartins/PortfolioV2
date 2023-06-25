@@ -1,4 +1,4 @@
-import SuitCaseIcon from "../../icons/SuitCaseIcon";
+import SuitCaseIcon from "../../Icons/SuitCaseIcon";
 
 const ExperienciaProfissional = () => {
   const experiencia = {

@@ -1,4 +1,4 @@
-import React from 'react'
+import Input from './Input/Input'
 
 const Form = () => {
   return (
@@ -6,7 +6,7 @@ const Form = () => {
         <label htmlFor="search">
             <i></i>
         </label>
-        <input id='search' type="text" placeholder='Busque, por nome, linguagem ou tecnologias' />
+        <Input id='search'/>
     </form>
   )
 }

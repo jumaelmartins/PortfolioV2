@@ -1,6 +1,6 @@
 import Card from "../Home/Card/Cards";
 import Title from "../Title/Title";
-import PlusIcon from "../icons/PlusIcon";
+import PlusIcon from "../Icons/PlusIcon";
 import ExperienciaProfissional from "./ExperienciaProfissional/ExperienciaProfissional";
 import FormacaoAcademica from "./FormacaoAcademica/FormacaoAcademica";
 import Habilidades from "./Habilidades/Habilidades";
