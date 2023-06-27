@@ -1,12 +1,18 @@
 import Input from './Input/Input'
 
-const Form = () => {
+interface formTypes {
+  icon: React.ReactNode,
+  id: string,
+  placeholder: string,
+}
+
+const Form = ({icon, id, placeholder}: formTypes) => {
   return (
-    <form action="/" method="post">
-        <label htmlFor="search">
-            <i></i>
+    <form autoComplete='off' className={id} action="/">
+        <label  htmlFor={id}>
+            <i>{icon}</i>
         </label>
-        <Input id='search'/>
+        <Input placeholder={placeholder} id={id}/>
     </form>
   )
 }

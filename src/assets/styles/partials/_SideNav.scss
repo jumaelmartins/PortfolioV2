@@ -1,6 +1,6 @@
 @use "./variables";
 
-aside {
+.sideNav {
     position: fixed;
     background: variables.$g-1;
     padding: 3rem 2rem;
@@ -11,6 +11,9 @@ aside {
     z-index: 2;
 
     ul {
-        @include variables.flex(column, nowrap, 2rem)
+        @include variables.flex(column, nowrap, 2rem);
+        li {
+            cursor: pointer;
+        }
     }
 }

@@ -34,4 +34,30 @@
         display: flex;
         gap: 1.5rem;
     }
+
+    ul > li > p {
+       padding: 1rem 2rem ; 
+       background: variables.$B-3;
+       border-radius: .5rem;
+       font-weight: bold;
+       text-transform: uppercase;
+       cursor: pointer;
+    }
+}
+
+
+.search {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    input {
+        height: 4.6rem;
+        min-width: 44rem;
+        border-radius: 5rem;
+        border: none;
+        background: variables.$g-3;
+        color: variables.$g-10;
+        padding: 1rem 2rem;
+        font-size: 2rem;
+    }
 }

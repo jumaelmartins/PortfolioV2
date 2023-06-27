@@ -1,6 +1,8 @@
 import Filter from "../Icons/Filter";
+import Search from "../Icons/Search";
 import Title from "../Title/Title";
 import Filtro from "./Filtro/Filtro";
+import Form from "./Form/Form";
 
 const ProjetosComponente = () => {
   return (
@@ -11,16 +13,7 @@ const ProjetosComponente = () => {
       <div className="filtro">
         <Filtro icon={<Filter/>} content={["html","javascript", "css"]}/>
       </div>
-      <form action="/" method="post">
-        <label htmlFor="search">
-          <i></i>
-        </label>
-        <input
-          id="search"
-          type="text"
-          placeholder="Busque, por nome, linguagem ou tecnologias"
-        />
-      </form>
+      <Form placeholder="Busque, por nome, linguagem ou tecnologias" id="search" icon={<Search/>} />
       <ul>
         <li>1</li>
         <li>2</li>

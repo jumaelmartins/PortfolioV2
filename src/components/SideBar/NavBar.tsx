@@ -4,8 +4,7 @@ import SkillIcon from '../icons/SkillIcon'
 
 const NavBar = () => {
   return (
-    <aside>
-        <nav>
+        <nav className='sideNav' aria-role='side-navbar'>
             <ul>
                 <li>
                     <HomeIcon/>
@@ -18,7 +17,6 @@ const NavBar = () => {
                 </li>
             </ul>
         </nav>
-    </aside>
   )
 }
 
