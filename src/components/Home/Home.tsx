@@ -3,7 +3,7 @@ import LearningIcon from "../icons/LearningIcon";
 import ResponsiveIcon from "../icons/ResponsiveIcon";
 import Stroke from "../icons/Stroke";
 import Avatar from "./Avatar/Avatar";
-import Card from "./Card/Cards";
+import Card from "../Card/Cards";
 import Title from "./Title/Title";
 
 const Home = () => {

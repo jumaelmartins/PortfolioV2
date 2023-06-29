@@ -1,4 +1,4 @@
-import Card from "../Home/Card/Cards";
+import Card from "../Card/Cards";
 import Title from "../Title/Title";
 import PlusIcon from "../Icons/PlusIcon";
 import ExperienciaProfissional from "./ExperienciaProfissional/ExperienciaProfissional";
