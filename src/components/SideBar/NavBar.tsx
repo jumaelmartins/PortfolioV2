@@ -4,7 +4,7 @@ import SkillIcon from '../icons/SkillIcon'
 
 const NavBar = () => {
   return (
-        <nav className='sideNav' aria-role='side-navbar'>
+        <nav className='side-navbar' aria-role='side-navbar'>
             <ul>
                 <li>
                     <HomeIcon/>

@@ -10,11 +10,11 @@
   box-shadow: 0 .1rem .5rem variables.$g-7;
 }
 
-.header__navbar-container > ul {
+.header__navbar > ul {
   @include variables.flex(row, nowrap, 2rem);
 }
 
-.header__navbar-container > ul > li > a {
+.header__navbar > ul > li > a {
   font-size: 2rem;
   color: variables.$g-13;
   position: relative;

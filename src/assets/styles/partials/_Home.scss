@@ -1,8 +1,8 @@
 @use "./variables";
 
-#inicio {
+#home {
   padding: 0 5% 8rem 5%;
-  .inicio--title {
+  .home-title {
     display: flex;
     gap: 8rem;
   }
@@ -17,7 +17,7 @@
   }
 }
 
-.inicio--card {
+.home-card {
   margin-top: 20rem;
   display: flex;
   justify-content: space-between;
