@@ -39,7 +39,7 @@ const ExperienciaProfissional = () => {
       <h3>Experiencia Profissional</h3>
       <ul>
       {experiencia.experiencia.map((experiencia) => (
-        <li>
+        <li key={experiencia.id}>
           <div className="pasta--icone">
             <SuitCaseIcon/>
           </div>

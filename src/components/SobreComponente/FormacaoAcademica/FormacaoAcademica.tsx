@@ -25,7 +25,7 @@ const FormacaoAcademica = () => {
       <h3>Formacao Academica</h3>
       <ul>
       {formacao.formacao.map((formacao) => (
-        <li>
+        <li key={formacao.id}>
           <div>
             <h5 className="curso">
               {formacao.curso}{" "}

@@ -40,16 +40,12 @@ const Home = () => {
       </div>
       <ul className="home-card">
         {info.info.map((item) => (
-          <li>
-            {
-              <Card
-                icon={item.icon}
-                title={item.title}
-                content={item.content}
-                key={item.id}
-              />
-            }
-          </li>
+          <Card
+            icon={item.icon}
+            title={item.title}
+            content={item.content}
+            key={item.id}
+          />
         ))}
       </ul>
     </section>

@@ -4,13 +4,13 @@ interface CardTypes {
   icon?: React.ReactNode;
   title: string;
   content: string | [];
-  variant?: string;
+  variant?: string | undefined;
   thumb?: string;
 }
 
 const Card = ({ icon, title, content, variant, thumb }: CardTypes) => {
   return (
-    <div className={`card ${variant}`}>
+    <li className={`card${variant ? " " + variant : ""}`}>
       {icon}
       <h3>{title}</h3>
       {thumb ? <img src={thumb} alt="" /> : ""}
@@ -33,7 +33,7 @@ const Card = ({ icon, title, content, variant, thumb }: CardTypes) => {
           <p>info</p>
         </div>
       )}
-    </div>
+    </li>
   );
 };
 

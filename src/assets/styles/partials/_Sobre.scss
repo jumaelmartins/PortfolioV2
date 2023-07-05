@@ -1,23 +1,24 @@
 @use "./variables";
 
 
-#sobre {
+#about {
     @include variables.flex(column, nowrap, "");
     background: variables.$g-3;
     padding: 5%;
 }
 
-#sobre > h2 {
+#about > h2 {
     text-align: center;
     font-size: 4rem;
+    text-transform: uppercase;
 }
 
-.sobre--container {
+.about__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.sobre--content--experiencias {
+.about__experiencias {
     margin-top: 28rem;
     h3, h4 {
         font-weight: bold;
@@ -101,7 +102,7 @@
     font-size: 1.2rem;
 }
 
-.sobre--content--resumo {
+.about__resumo {
     @include variables.flex(column, nowrap, 1rem);
     align-items: flex-end;
     margin-top: 8rem;
@@ -111,7 +112,7 @@
     }
 }
 
-.sobre--card-container {
+.about__card-container {
     margin-top: 8rem;
     background:  url("/src/assets/icons/Group-50.svg") no-repeat 7rem center;
     height: 968px;

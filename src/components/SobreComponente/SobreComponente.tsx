@@ -5,17 +5,17 @@ import ExperienciaProfissional from "./ExperienciaProfissional/ExperienciaProfis
 import FormacaoAcademica from "./FormacaoAcademica/FormacaoAcademica";
 import Habilidades from "./Habilidades/Habilidades";
 
-const SobreComponente = () => {
+const sobreComponente = () => {
   return (
-    <section id="sobre">
-      <Title content="SOBRE" />
-      <div className="sobre--container">
-        <section className="sobre--content--experiencias">
+    <section id="about">
+      <Title content="sobre" />
+      <div className="about__container">
+        <section className="about__experiencias">
           <Habilidades />
           <ExperienciaProfissional />
           <FormacaoAcademica />
         </section>
-        <section className="sobre--content--resumo">
+        <section className="about__resumo">
           <div>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non rem
@@ -24,15 +24,15 @@ const SobreComponente = () => {
               laudantium quidem incidunt.
             </p>
           </div>
-          <div className="sobre--card-container">
-              <Card title="20" content="Projetos" variant="card--sobre" icon={<PlusIcon/>}/>
-              <Card title="20" content="Projetos" variant="card--sobre card-2" icon={<PlusIcon/>}/>
-              <Card title="20" content="Projetos" variant="card--sobre" icon={<PlusIcon/>}/>
-          </div>
+          <ul className="about__card-container">
+              <Card title="20" content="Projetos" variant="card--about" icon={<PlusIcon/>}/>
+              <Card title="20" content="Projetos" variant="card--about card-2" icon={<PlusIcon/>}/>
+              <Card title="20" content="Projetos" variant="card--about" icon={<PlusIcon/>}/>
+          </ul>
         </section>
       </div>
     </section>
   );
 };
 
-export default SobreComponente;
+export default sobreComponente;
