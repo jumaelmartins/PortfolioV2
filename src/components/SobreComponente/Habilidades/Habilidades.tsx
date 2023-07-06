@@ -1,23 +1,32 @@
+import CssIcon from "../../Icons/CssIcon";
+import GitHub from "../../Icons/GitHub";
+import HtmlIcon from "../../Icons/HtmlIcon"
+import JavaScriptIcon from "../../Icons/JavaScriptIcon";
+import NodeIcon from "../../Icons/NodeIcon";
+import ReactIcon from "../../Icons/ReactIcon";
+import SassIcon from "../../Icons/SassIcon";
+import TypescriptIcon from "../../Icons/TypescriptIcon";
+
 const Habilidades = () => {
   const habilidades = {
-    dominadas: ["HTML", "CSS", "JAVASCRIPT", "SASS", "GITHUB"],
-    aprendendo: ["TYPESCRIPT", "REACT", "NODEJS"],
+    dominadas: [<HtmlIcon/>, <CssIcon/>, <JavaScriptIcon/>, <SassIcon/>, <GitHub/>],
+    aprendendo: [<TypescriptIcon/>, <ReactIcon/>, <NodeIcon/>],
   };
 
   return (
-    <div className="habilidades">
+    <div className="skills">
       <h3>Habilidades</h3>
-      <div className="habilidades--dominadas--container">
+      <div className="skills__adquired">
         <h3>Já utilizo com maestria</h3>
-        <ul className="habilidades--dominadas">
+        <ul className="skills__adquired__mastered">
           {habilidades.dominadas.map((habilidade) => (
             <li>{habilidade}</li>
           ))}
         </ul>
       </div>
-      <div className="habilidades--aprendendo--container">
+      <div className="skill__learning">
         <h3>Aprendendo</h3>
-        <ul className="habilidades--aprendendo">
+        <ul className="skill__learning__newbie">
           {habilidades.aprendendo.map((habilidade) => (
             <li>{habilidade}</li>
           ))}

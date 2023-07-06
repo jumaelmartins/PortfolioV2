@@ -44,4 +44,8 @@
   padding: 1rem 2rem;
   border-radius: 20rem;
   border: 0.4rem solid #fff;
+
+  & li > a > svg {
+    fill: white;
+  }
 }

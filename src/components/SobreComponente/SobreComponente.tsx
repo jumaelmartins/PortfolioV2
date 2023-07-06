@@ -10,12 +10,12 @@ const sobreComponente = () => {
     <section id="about">
       <Title content="sobre" />
       <div className="about__container">
-        <section className="about__experiencias">
+        <section className="about__experience">
           <Habilidades />
           <ExperienciaProfissional />
           <FormacaoAcademica />
         </section>
-        <section className="about__resumo">
+        <section className="about__resume">
           <div>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non rem

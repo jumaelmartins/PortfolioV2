@@ -35,17 +35,17 @@ const ExperienciaProfissional = () => {
   };
 
   return (
-    <div className="experiencia--profissional">
+    <div className="professional-experience">
       <h3>Experiencia Profissional</h3>
       <ul>
       {experiencia.experiencia.map((experiencia) => (
         <li key={experiencia.id}>
-          <div className="pasta--icone">
+          <div className="svg-icon">
             <SuitCaseIcon/>
           </div>
           <div>
-            <h5 className="cargo">{experiencia.cargo} <b>({experiencia.inicio} - {experiencia.fim})</b></h5>
-            <p className="empresa">{experiencia.empresa}</p>
+            <h5 className="position">{experiencia.cargo} <b>({experiencia.inicio} - {experiencia.fim})</b></h5>
+            <p className="company">{experiencia.empresa}</p>
           </div>
         </li>
       ))}

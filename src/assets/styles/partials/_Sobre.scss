@@ -18,7 +18,7 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.about__experiencias {
+.about__experience {
     margin-top: 28rem;
     h3, h4 {
         font-weight: bold;
@@ -29,15 +29,23 @@
     }
 }
 
-.habilidades--dominadas, .habilidades--aprendendo {
-    @include variables.flex(row, nowrap, 1rem);
+.skills__adquired, .skills__learning {
+    @include variables.flex(column, nowrap, 1rem);
 }
 
-.habilidades--dominadas--container{
+.skills__adquired__mastered, .skill__learning__newbie{
     margin: 4rem 0 2rem 0;
+    display: flex;
+    gap: 2rem;
+
+    & li > svg {
+        width: 64px;
+        height: 64px;
+        fill: variables.$g-13;
+    }
 }
 
-.experiencia--profissional {
+.professional-experience {
     margin-top: 7rem;
     width: 30rem;
 
@@ -47,7 +55,7 @@
         margin: 1.5rem 0;
         gap: 1rem;
 
-        .pasta--icone {
+        .svg-icon {
             height: 6.4rem;
             position: relative;
             &::after {
@@ -94,15 +102,15 @@
     }
 }
 
-.cargo, .curso {
+.position, .curso {
     font-size: 1.6rem;
 }
 
-.empresa, .instituicao {
+.company, .instituicao {
     font-size: 1.2rem;
 }
 
-.about__resumo {
+.about__resume {
     @include variables.flex(column, nowrap, 1rem);
     align-items: flex-end;
     margin-top: 8rem;
