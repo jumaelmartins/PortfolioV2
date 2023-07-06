@@ -21,19 +21,19 @@ const FormacaoAcademica = () => {
   };
 
   return (
-    <div className="formacao-academica-container">
+    <div className="college__degree">
       <h3>Formacao Academica</h3>
       <ul>
       {formacao.formacao.map((formacao) => (
         <li key={formacao.id}>
           <div>
-            <h5 className="curso">
+            <h5 className="course">
               {formacao.curso}{" "}
               <b>
                 ({formacao.inicio} - {formacao.fim})
               </b>
             </h5>
-            <p className="instituicao">{formacao.instituicao}</p>
+            <p className="college">{formacao.instituicao}</p>
           </div>
           <div className="graduation-icon">
             <GraduationIcon/>

@@ -1,137 +1,164 @@
 @use "./variables";
 
-
 #about {
-    @include variables.flex(column, nowrap, "");
-    background: variables.$g-3;
-    padding: 5%;
+  @include variables.flex(column, nowrap, "");
+  background: variables.$g-3;
+  padding: 5%;
 }
 
 #about > h2 {
-    text-align: center;
-    font-size: 4rem;
-    text-transform: uppercase;
+  text-align: center;
+  font-size: 4rem;
+  text-transform: uppercase;
 }
 
 .about__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .about__experience {
-    margin-top: 28rem;
-    h3, h4 {
-        font-weight: bold;
-    }
+  margin-top: 28rem;
+  h3,
+  h4 {
+    font-weight: bold;
+  }
 
-    h3 {
-        font-size: 2rem;
-    }
+  h3 {
+    font-size: 2rem;
+  }
 }
 
-.skills__adquired, .skills__learning {
-    @include variables.flex(column, nowrap, 1rem);
+.skills h3, .professional-experience  h3, .formacao-academica-container {
+  color: variables.$g-11;
 }
 
-.skills__adquired__mastered, .skill__learning__newbie{
-    margin: 4rem 0 2rem 0;
-    display: flex;
-    gap: 2rem;
+.skills__adquired {
+  margin-top: 4.8rem;
+}
 
-    & li > svg {
-        width: 64px;
-        height: 64px;
-        fill: variables.$g-13;
-    }
+.skills__adquired,
+.skills__learning {
+  @include variables.flex(column, nowrap, "");
+  h3 {
+    color: variables.$g-10;
+  }
+}
+
+.skills__adquired__mastered,
+.skills__learning__newbie {
+  margin: 4rem 0 2rem 0;
+  display: flex;
+  gap: 2rem;
+
+  & li > svg {
+    width: 64px;
+    height: 64px;
+    fill: variables.$g-13;
+  }
 }
 
 .professional-experience {
-    margin-top: 7rem;
-    width: 30rem;
+  margin-top: 7rem;
+  width: 30rem;
 
-    ul > li {
-        display: flex;
-        align-items: center;
-        margin: 1.5rem 0;
-        gap: 1rem;
+  ul > li {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    gap: 1rem;
 
-        .svg-icon {
-            height: 6.4rem;
-            position: relative;
-            &::after {
-                content: "";
-                position: absolute;
-                height: 3rem;
-                width: .2rem;
-                background: gray;
-                bottom: -2.4rem;
-                left: 47%;
-            }
-        }
+    .svg-icon {
+      height: 6.4rem;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 3rem;
+        width: 0.2rem;
+        background: gray;
+        bottom: -2.4rem;
+        left: 47%;
+      }
     }
-    
+  }
 }
 
-.formacao-academica-container {
-    margin-top: 8rem;
-    width: 30rem;
+.position, .course {
+    color: variables.$g-10;
 
-    ul > li {
-        display: flex;
-        align-items: center;
-        margin: 1.5rem 0;
-        gap: 1rem;
-        
-        .graduation-icon {
-            display: flex;
-            align-items: flex-start;
-            // height: 6.4rem;
-            position: relative;
-            padding-bottom: 3.2rem;
-            &::after {
-                content: "";
-                position: absolute;
-                height: 8.5rem;
-                width: .2rem;
-                background: gray;
-                bottom: -3.4rem;
-                left: 47%;
-            }
-
-        }
+    & b {
+        color: variables.$g-13;
     }
 }
 
-.position, .curso {
-    font-size: 1.6rem;
+.company, .college {
+    color: variables.$g-9;
+    font-weight: bold;
 }
 
-.company, .instituicao {
-    font-size: 1.2rem;
+.college__degree {
+  margin-top: 8rem;
+  width: 30rem;
+
+  ul > li {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    gap: 1rem;
+
+    .graduation-icon {
+      display: flex;
+      align-items: flex-start;
+      // height: 6.4rem;
+      position: relative;
+      padding-bottom: 3.2rem;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 8.5rem;
+        width: 0.2rem;
+        background: gray;
+        bottom: -3.4rem;
+        left: 47%;
+      }
+    }
+  }
+}
+
+.position,
+.course {
+  font-size: 1.6rem;
+}
+
+.company,
+.college {
+  font-size: 1.2rem;
 }
 
 .about__resume {
-    @include variables.flex(column, nowrap, 1rem);
-    align-items: flex-end;
-    margin-top: 8rem;
-    p {
-        font-size: 2rem;
-        width: 51rem;
-    }
+  @include variables.flex(column, nowrap, 1rem);
+  align-items: flex-end;
+  margin-top: 8rem;
+  p {
+    font-size: 2rem;
+    width: 51rem;
+    color: variables.$g-10;
+  }
 }
 
 .about__card-container {
-    margin-top: 8rem;
-    background:  url("/src/assets/icons/Group-50.svg") no-repeat 7rem center;
-    height: 968px;
-    width: 620px;
+  margin-top: 8rem;
+  background: url("/src/assets/icons/Group-50.svg") no-repeat 7rem center;
+  height: 968px;
+  width: 620px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .card-2 {
-    align-self: flex-start;
+  align-self: flex-start;
 }

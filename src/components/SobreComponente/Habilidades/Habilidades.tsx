@@ -24,9 +24,9 @@ const Habilidades = () => {
           ))}
         </ul>
       </div>
-      <div className="skill__learning">
+      <div className="skills__learning">
         <h3>Aprendendo</h3>
-        <ul className="skill__learning__newbie">
+        <ul className="skills__learning__newbie">
           {habilidades.aprendendo.map((habilidade) => (
             <li>{habilidade}</li>
           ))}
