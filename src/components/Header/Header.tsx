@@ -19,9 +19,9 @@ const Header = () => {
       </nav>
       <div className="header__contacts-links">
         <ul>
-          <li><a href=""><GitHub/></a></li>
-          <li><a href=""><Linkedin/></a></li>
-          <li><a href=""><WhatsApp/></a></li>
+          <li><a href="#"><GitHub/></a></li>
+          <li><a href="#"><Linkedin/></a></li>
+          <li><a href="#"><WhatsApp/></a></li>
         </ul>
         <i className="toggle-theme">
           <Moon/>

@@ -1,3 +1,4 @@
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Inicio from "./pages/Inicio";
 import Projetos from "./pages/Projetos";
@@ -10,6 +11,7 @@ const App = () => {
       <Inicio />
       <Sobre />
       <Projetos />
+      <Footer/>
     </>
   );
 };

@@ -1,8 +1,7 @@
 import GraduationIcon from "../../icons/GraduationIcon";
 
 const FormacaoAcademica = () => {
-  const formacao = {
-    formacao: [
+  const formacao = [
       {
         id: 2,
         curso: "Bacharelado em Ciencias da Computação",
@@ -17,14 +16,13 @@ const FormacaoAcademica = () => {
         inicio: "01-2019",
         fim: "10-2022",
       },
-    ],
-  };
+    ]
 
   return (
     <div className="college__degree">
       <h3>Formacao Academica</h3>
       <ul>
-      {formacao.formacao.map((formacao) => (
+      {formacao.map((formacao) => (
         <li key={formacao.id}>
           <div>
             <h5 className="course">
