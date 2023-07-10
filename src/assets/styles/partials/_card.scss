@@ -8,7 +8,7 @@
     @include variables.flex(column, nowrap, 2rem);
     position: relative;
     background: variables.$g-1;
-    box-shadow: .1rem 0 5rem 0 variables.$gray;
+    box-shadow: .1rem 0 1rem 0 variables.$gray;
 
     
     &:hover {
@@ -46,7 +46,7 @@
     align-content: center;
 
     svg {
-        left: 65%;
+        right: 70%;
         top: 35%;
         position: absolute;
     }
@@ -75,17 +75,22 @@
     padding: 0;
     gap: 0;
     margin: auto;
+    border-radius: 1rem;
+
 
     svg {
         position: static;
         width: 2.4rem;
         height: 2.4rem;
+        border-radius: 2rem;
+        border: .2rem solid white;
+        fill: variables.$B-8;
     }
 
     ul {
         display: flex;
-        gap: 1rem;
-        padding: .5rem;
+        gap: .5rem;
+        padding: .5rem 2rem;
     }
 
     h3 {
@@ -95,6 +100,7 @@
         border-radius: 1rem 1rem 0 0;
         text-transform: uppercase;
         height: 5rem;
+        align-items: center;
     }
 
     img {
@@ -106,12 +112,19 @@
         width: 100%;
         top: 40%;
         position: absolute;
-        display: flex;
         justify-content: space-between;
+        display: none;
         p{
             padding: 1rem 2rem;
             background: variables.$g-9;
             color: white;
+            cursor: pointer;
         }
+    }
+}
+
+.third:hover {
+    div{
+        display: flex;
     }
 }

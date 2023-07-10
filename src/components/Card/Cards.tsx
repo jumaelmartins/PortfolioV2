@@ -3,7 +3,7 @@ import React from "react";
 interface CardTypes {
   icon?: React.ReactNode;
   title: string;
-  content: [];
+  content: [] | string;
   variant?: string | undefined;
   thumb?: string;
 }
@@ -11,8 +11,8 @@ interface CardTypes {
 const Card = ({ icon, title, content, variant, thumb }: CardTypes) => {
   return (
     <li className={`card${variant ? " " + variant : ""}`}>
-      {icon}
       <h3>{title}</h3>
+      {icon}
       {thumb ? <img src={thumb} alt="" /> : ""}
 
       {typeof content === "string" ? (
@@ -24,6 +24,7 @@ const Card = ({ icon, title, content, variant, thumb }: CardTypes) => {
           ))}
         </ul>
       )}
+
       {variant !== "third" ? (
         ""
       ) : (

@@ -18,16 +18,31 @@ const sobreComponente = () => {
         <section className="about__resume">
           <div>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non rem
-              libero, quam minima nemo dolore mollitia dolorem natus, temporibus
-              harum numquam laborum eveniet tenetur labore doloremque optio
-              laudantium quidem incidunt.
+              Me chamo Jumael Martins, sou um desenvolvedor front end web,
+              comecei meus estudos por volta de mai/2022, no momento estou com
+              foco em react e typescript.
+              gosto de animes, musculação e dormi.
             </p>
           </div>
           <ul className="about__card-container">
-              <Card title="20" content="Projetos" variant="card--about" icon={<PlusIcon/>}/>
-              <Card title="20" content="Projetos" variant="card--about card-2" icon={<PlusIcon/>}/>
-              <Card title="20" content="Projetos" variant="card--about" icon={<PlusIcon/>}/>
+            <Card
+              title="20"
+              content="Projetos"
+              variant="card--about"
+              icon={<PlusIcon />}
+            />
+            <Card
+              title="1Y"
+              content="Experiencia"
+              variant="card--about card-2"
+              icon={<PlusIcon />}
+            />
+            <Card
+              title="300"
+              content="Commits"
+              variant="card--about"
+              icon={<PlusIcon />}
+            />
           </ul>
         </section>
       </div>
