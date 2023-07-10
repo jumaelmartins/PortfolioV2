@@ -7,6 +7,7 @@ import Form from "./Form/Form";
 import instagramImg from "../../assets/img/instagram-img.png";
 import Card from "../Card/Cards";
 import JavaScriptIcon from "../Icons/JavaScriptIcon";
+import HtmlIcon from "../Icons/HtmlIcon";
 
 const ProjetosComponente = () => {
   const projetos = [
@@ -18,8 +19,8 @@ const ProjetosComponente = () => {
       langs: {
         javascript: 123,
         html: 1,
-        css: 2
-      }
+        css: 2,
+      },
     },
     {
       title: "projeto 2",
@@ -29,8 +30,8 @@ const ProjetosComponente = () => {
       langs: {
         javascript: 123,
         sass: 1,
-        css: 2
-      }
+        css: 2,
+      },
     },
     {
       title: "projeto 3",
@@ -40,8 +41,8 @@ const ProjetosComponente = () => {
       langs: {
         javascript: 123,
         typescript: 1,
-        css: 2
-      }
+        css: 2,
+      },
     },
     {
       title: "projeto 4",
@@ -51,8 +52,8 @@ const ProjetosComponente = () => {
       langs: {
         javascript: 123,
         html: 1,
-        css: 2
-      }
+        css: 2,
+      },
     },
     {
       title: "projeto 5",
@@ -62,8 +63,8 @@ const ProjetosComponente = () => {
       langs: {
         javascript: 123,
         html: 1,
-        css: 2
-      }
+        css: 2,
+      },
     },
     {
       title: "projeto 6",
@@ -73,25 +74,22 @@ const ProjetosComponente = () => {
       langs: {
         javascript: 123,
         html: 1,
-        css: 2
-      }
+        css: 2,
+      },
     },
   ];
 
   const novoArray = projetos.reduce((acc: any, obj) => {
-   
     const langs = Object.keys(obj.langs);
-    langs.forEach(lang => {
+    langs.forEach((lang) => {
       if (!acc.includes(lang)) {
         acc.push(lang);
       }
     });
     return acc;
-  }, [])
+  }, []);
 
-const languagesIcon = [
-  {javascript: <JavaScriptIcon/>}
-]
+  const languagesIcon = [{ javascript: <JavaScriptIcon /> }];
 
   return (
     <section id="projects">
@@ -108,14 +106,13 @@ const languagesIcon = [
       />
       <ul className="projects-card">
         {projetos.map((projeto) => (
-          <li key={projeto.id}>
-            <Card
-              variant="third"
-              title={projeto.title}
-              thumb={projeto.img}
-              content={projeto.content}
-            />
-          </li>
+          <Card
+            key={projeto.id}
+            variant="third"
+            title={projeto.title}
+            thumb={projeto.img}
+            content={[<JavaScriptIcon/>, <HtmlIcon/>]}
+          />
         ))}
       </ul>
     </section>

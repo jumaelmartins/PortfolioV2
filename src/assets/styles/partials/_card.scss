@@ -74,6 +74,19 @@
     max-width: 40rem;
     padding: 0;
     gap: 0;
+    margin: auto;
+
+    svg {
+        position: static;
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    ul {
+        display: flex;
+        gap: 1rem;
+        padding: .5rem;
+    }
 
     h3 {
         display: flex;

@@ -3,7 +3,7 @@ import React from "react";
 interface CardTypes {
   icon?: React.ReactNode;
   title: string;
-  content: string | [];
+  content: [];
   variant?: string | undefined;
   thumb?: string;
 }
