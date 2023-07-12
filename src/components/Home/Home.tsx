@@ -4,8 +4,15 @@ import ResponsiveIcon from "../Icons/ResponsiveIcon";
 import Avatar from "./Avatar/Avatar";
 import Card from "../Card/Cards";
 import Title from "./Title/Title";
+import ScrollReveal from "scrollreveal";
+import React from "react";
 
 const Home = () => {
+  React.useEffect(() => {
+    ScrollReveal().reveal(".home-card", {duration: 800, reset: true});
+    ScrollReveal().reveal(".effect-1", {interval: 200, reset: true})
+  }, []);
+
   const info = {
     info: [
       {
@@ -41,6 +48,7 @@ const Home = () => {
       <ul className="home-card">
         {info.info.map((item) => (
           <Card
+            variant="effect-1"
             icon={item.icon}
             title={item.title}
             content={item.content}

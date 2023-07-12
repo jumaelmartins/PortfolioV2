@@ -1,4 +1,3 @@
-import React from "react";
 import Filter from "../Icons/Filter";
 import Search from "../Icons/Search";
 import Title from "../Title/Title";
@@ -8,6 +7,15 @@ import instagramImg from "../../assets/img/instagram-img.png";
 import Card from "../Card/Cards";
 import JavaScriptIcon from "../Icons/JavaScriptIcon";
 import HtmlIcon from "../Icons/HtmlIcon";
+import { register } from "swiper/element";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+register();
 
 const ProjetosComponente = () => {
   const projetos = [
@@ -89,8 +97,6 @@ const ProjetosComponente = () => {
     return acc;
   }, []);
 
-  const languagesIcon = [{ javascript: <JavaScriptIcon /> }];
-
   return (
     <section id="projects">
       <div className="projects--title">
@@ -104,16 +110,17 @@ const ProjetosComponente = () => {
         id="search"
         icon={<Search />}
       />
+
       <ul className="projects-card">
-        {projetos.map((projeto) => (
-          <Card
-            key={projeto.id}
-            variant="third"
-            title={projeto.title}
-            thumb={projeto.img}
-            content={[<JavaScriptIcon/>, <HtmlIcon/>]}
-          />
-        ))}
+          {projetos.map((projeto) => (
+              <Card
+                key={projeto.id}
+                variant="third"
+                title={projeto.title}
+                thumb={projeto.img}
+                content={[<JavaScriptIcon />, <HtmlIcon />]}
+              />
+          ))}
       </ul>
     </section>
   );

@@ -28,7 +28,7 @@ const Habilidades = () => {
         <h3>Já utilizo com maestria</h3>
         <ul className="skills__adquired__mastered">
           {masteredSkills.map((skill) => (
-            <li key={skill.id}>{skill.skill}</li>
+            <li className="skill" key={skill.id}>{skill.skill}</li>
           ))}
         </ul>
       </div>
@@ -36,7 +36,7 @@ const Habilidades = () => {
         <h3>Aprendendo</h3>
         <ul className="skills__learning__newbie">
           {learningSkills.map((skill) => (
-            <li key={skill.id}>{skill.skill}</li>
+            <li className="skill" key={skill.id}>{skill.skill}</li>
           ))}
         </ul>
       </div>

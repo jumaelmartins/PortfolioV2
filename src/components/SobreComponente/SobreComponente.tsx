@@ -4,8 +4,21 @@ import PlusIcon from "../Icons/PlusIcon";
 import ExperienciaProfissional from "./ExperienciaProfissional/ExperienciaProfissional";
 import FormacaoAcademica from "./FormacaoAcademica/FormacaoAcademica";
 import Habilidades from "./Habilidades/Habilidades";
+import ScrollReveal from "scrollreveal";
+import React from "react";
+
+
 
 const sobreComponente = () => {
+  React.useEffect(() => {
+    ScrollReveal().reveal(".about__container", {duration: 100, reset: true});
+    ScrollReveal().reveal(".skill", {interval: 100, reset: true})
+    ScrollReveal().reveal(".experience", {interval: 200, reset: true})
+    ScrollReveal().reveal(".degree", {interval: 200, reset: true})
+    ScrollReveal().reveal(".card--about", {interval: 200, reset: true})
+  }, []);
+
+  
   return (
     <section id="about">
       <Title content="sobre" />

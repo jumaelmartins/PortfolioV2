@@ -23,7 +23,7 @@ const FormacaoAcademica = () => {
       <h3>Formacao Academica</h3>
       <ul>
       {formacao.map((formacao) => (
-        <li key={formacao.id}>
+        <li className="degree" key={formacao.id}>
           <div>
             <h5 className="course">
               {formacao.curso}{" "}
