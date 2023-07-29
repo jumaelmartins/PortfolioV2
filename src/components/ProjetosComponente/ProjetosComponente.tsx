@@ -4,79 +4,42 @@ import Title from "../Title/Title";
 import Filtro from "./Filtro/Filtro";
 import Form from "./Form/Form";
 import instagramImg from "../../assets/img/instagram-img.png";
-import Card from "../Card/Cards";
-import JavaScriptIcon from "../Icons/JavaScriptIcon";
-import HtmlIcon from "../Icons/HtmlIcon";
-import { register } from "swiper/element";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+// import Card from "../Card/Cards";
+// import JavaScriptIcon from "../Icons/JavaScriptIcon";
+// import HtmlIcon from "../Icons/HtmlIcon";
+import React from "react";
+import Pagination from "../Pagination/Pagination";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-
-register();
+interface projetos {
+  id: string;
+  name: string;
+}
 
 const ProjetosComponente = () => {
+  const [data, setData] = React.useState<null | projetos[]>(null);
+  const [offset, setOffset] = React.useState(0);
+  const [total, setTotal] = React.useState(6);
+  const limit = 6;
+
+  React.useEffect(() => {
+    const dataFetch = async () => {
+      const response = await fetch(
+        "https://api.github.com/users/jumaelmartins/repos"
+      );
+      const json = await response.json();
+      const start = offset;
+      const end = offset + limit;
+      setTotal(json.length);
+      setData(json.slice(start, end));
+    };
+
+    dataFetch();
+  }, [offset]);
+
   const projetos = [
     {
       title: "projeto 1",
       id: 0,
-      img: instagramImg,
-      content: "teste",
-      langs: {
-        javascript: 123,
-        html: 1,
-        css: 2,
-      },
-    },
-    {
-      title: "projeto 2",
-      id: 1,
-      img: instagramImg,
-      content: "teste",
-      langs: {
-        javascript: 123,
-        sass: 1,
-        css: 2,
-      },
-    },
-    {
-      title: "projeto 3",
-      id: 2,
-      img: instagramImg,
-      content: "teste",
-      langs: {
-        javascript: 123,
-        typescript: 1,
-        css: 2,
-      },
-    },
-    {
-      title: "projeto 4",
-      id: 3,
-      img: instagramImg,
-      content: "teste",
-      langs: {
-        javascript: 123,
-        html: 1,
-        css: 2,
-      },
-    },
-    {
-      title: "projeto 5",
-      id: 4,
-      img: instagramImg,
-      content: "teste",
-      langs: {
-        javascript: 123,
-        html: 1,
-        css: 2,
-      },
-    },
-    {
-      title: "projeto 6",
-      id: 5,
       img: instagramImg,
       content: "teste",
       langs: {
@@ -112,16 +75,17 @@ const ProjetosComponente = () => {
       />
 
       <ul className="projects-card">
-          {projetos.map((projeto) => (
-              <Card
-                key={projeto.id}
-                variant="third"
-                title={projeto.title}
-                thumb={projeto.img}
-                content={[<JavaScriptIcon />, <HtmlIcon />]}
-              />
-          ))}
+        {data?.map((repo) => (
+          <li key={repo.id}>{repo.name}</li>
+        ))}
       </ul>
+
+      <Pagination
+        total={total}
+        offset={offset}
+        limit={limit}
+        setOffset={setOffset}
+      />
     </section>
   );
 };
