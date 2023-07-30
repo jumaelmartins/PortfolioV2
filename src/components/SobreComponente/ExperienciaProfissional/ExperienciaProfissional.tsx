@@ -1,4 +1,4 @@
-import SuitCaseIcon from "../../Icons/SuitCaseIcon";
+import SuitCaseIcon from "../../Icons/SuitCaseIcon.tsx";
 
 const ExperienciaProfissional = () => {
   const experiencia = {

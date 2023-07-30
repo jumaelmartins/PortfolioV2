@@ -1,4 +1,4 @@
-import GraduationIcon from "../../Icons/GraduationIcon";
+import GraduationIcon from "../../Icons/GraduationIcon.tsx";
 
 const FormacaoAcademica = () => {
   const formacao = [

@@ -1,9 +1,9 @@
-import CleanCodeIcon from "../Icons/CleanCodeIcon";
-import LearningIcon from "../Icons/LearningIcon";
-import ResponsiveIcon from "../Icons/ResponsiveIcon";
-import Avatar from "./Avatar/Avatar";
-import Card from "../Card/Cards";
-import Title from "./Title/Title";
+import CleanCodeIcon from "../Icons/CleanCodeIcon.tsx";
+import LearningIcon from "../Icons/LearningIcon.tsx";
+import ResponsiveIcon from "../Icons/ResponsiveIcon.tsx";
+import Avatar from "./Avatar/Avatar.tsx";
+import Card from "../Card/Cards.tsx";
+import Title from "./Title/Title.tsx";
 import ScrollReveal from "scrollreveal";
 import React from "react";
 

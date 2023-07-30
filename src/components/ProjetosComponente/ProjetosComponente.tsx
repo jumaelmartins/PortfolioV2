@@ -1,14 +1,12 @@
-import Filter from "../Icons/Filter";
-import Search from "../Icons/Search";
-import Title from "../Title/Title";
-import Filtro from "./Filtro/Filtro";
-import Form from "./Form/Form";
+import Filter from "../Icons/Filter.tsx";
+import Search from "../Icons/Search.tsx";
+import Title from "../Title/Title.tsx";
+import Filtro from "./Filtro/Filtro.tsx";
+import Form from "./Form/Form.tsx";
 import instagramImg from "../../assets/img/instagram-img.png";
-import Card from "../Card/Cards";
-// import JavaScriptIcon from "../Icons/JavaScriptIcon";
-// import HtmlIcon from "../Icons/HtmlIcon";
+import Card from "../Card/Cards.tsx";
 import React from "react";
-import Pagination from "../Pagination/Pagination";
+import Pagination from "../Pagination/Pagination.tsx";
 
 interface projetos {
   id: string;

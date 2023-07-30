@@ -1,11 +1,11 @@
-import CssIcon from "../../Icons/CssIcon";
-import GitHub from "../../Icons/GitHub";
-import HtmlIcon from "../../Icons/HtmlIcon";
-import JavaScriptIcon from "../../Icons/JavaScriptIcon";
-import NodeIcon from "../../Icons/NodeIcon";
-import ReactIcon from "../../Icons/ReactIcon";
-import SassIcon from "../../Icons/SassIcon";
-import TypescriptIcon from "../../Icons/TypescriptIcon";
+import CssIcon from "../../Icons/CssIcon.tsx";
+import GitHub from "../../Icons/GitHub.tsx";
+import HtmlIcon from "../../Icons/HtmlIcon.tsx";
+import JavaScriptIcon from "../../Icons/JavaScriptIcon.tsx";
+import NodeIcon from "../../Icons/NodeIcon.tsx";
+import ReactIcon from "../../Icons/ReactIcon.tsx";
+import SassIcon from "../../Icons/SassIcon.tsx";
+import TypescriptIcon from "../../Icons/TypescriptIcon.tsx";
 
 const Habilidades = () => {
   const masteredSkills = [

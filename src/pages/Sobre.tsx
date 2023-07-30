@@ -1,4 +1,4 @@
-import SobreComponente from "../components/SobreComponente/SobreComponente";
+import SobreComponente from "../components/SobreComponente/SobreComponente.tsx";
 
 const Sobre = () => {
   return (

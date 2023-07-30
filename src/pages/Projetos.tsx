@@ -1,4 +1,4 @@
-import ProjetosComponente from "../components/ProjetosComponente/ProjetosComponente"
+import ProjetosComponente from "../components/ProjetosComponente/ProjetosComponente.tsx"
 
 const Projetos = () => {
   return (

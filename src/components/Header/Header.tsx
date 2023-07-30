@@ -1,8 +1,8 @@
-import GitHub from "../Icons/GitHub";
-import Linkedin from "../Icons/Linkedin";
-import Logo from "../Icons/Logo";
-import Moon from "../Icons/Moon";
-import WhatsApp from "../Icons/WhatsApp";
+import GitHub from "../Icons/GitHub.tsx";
+import Linkedin from "../Icons/Linkedin.tsx";
+import Logo from "../Icons/Logo.tsx";
+import Moon from "../Icons/Moon.tsx";
+import WhatsApp from "../Icons/WhatsApp.tsx";
 
 const Header = () => {
   return (  

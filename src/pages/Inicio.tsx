@@ -1,5 +1,5 @@
-import Home from '../components/Home/Home';
-import NavBar from '../components/SideBar/NavBar';
+import Home from '../components/Home/Home.tsx';
+import NavBar from '../components/SideBar/NavBar.tsx';
 
 const Inicio = () => {
   return (<>

@@ -1,9 +1,9 @@
-import Card from "../Card/Cards";
-import Title from "../Title/Title";
-import PlusIcon from "../Icons/PlusIcon";
-import ExperienciaProfissional from "./ExperienciaProfissional/ExperienciaProfissional";
-import FormacaoAcademica from "./FormacaoAcademica/FormacaoAcademica";
-import Habilidades from "./Habilidades/Habilidades";
+import Card from "../Card/Cards.tsx";
+import Title from "../Title/Title.tsx";
+import PlusIcon from "../Icons/PlusIcon.tsx";
+import ExperienciaProfissional from "./ExperienciaProfissional/ExperienciaProfissional.tsx";
+import FormacaoAcademica from "./FormacaoAcademica/FormacaoAcademica.tsx";
+import Habilidades from "./Habilidades/Habilidades.tsx";
 import ScrollReveal from "scrollreveal";
 import React from "react";
 
