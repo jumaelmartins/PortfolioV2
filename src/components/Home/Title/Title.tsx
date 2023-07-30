@@ -1,11 +1,12 @@
+import TwoStrokes from "../../Icons/TwoStrokes"
 import WhatsApp from "../../Icons/WhatsApp"
-import TwoStrokes from "../../icons/TwoStrokes"
+
 
 const Title = () => {
   return (
 
     <article className="title-container">
-        <TwoStrokes ID="stroke"/>
+        <TwoStrokes/>
         <div className="title-content">
             <h1 className="title">Desenvolvedor Front End</h1>
             <p>Jumael Martins</p>

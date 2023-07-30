@@ -1,5 +1,3 @@
-import React from "react";
-
 const maxVisibleButtons = 4;
 const maxLeftButtons = maxVisibleButtons / 2;
 
@@ -19,17 +17,26 @@ const Pagination = ({ total, limit, offset, setOffset }: paginationTypes) => {
     maxFirst
   );
 
-  const handleClick = (event) => {
-    setOffset((event.target.value - 1) * limit);
+  const handleClick = (event: any) => {
+    const value = event.target.value
+    setOffset((value - 1) * limit);
     console.log(currentPage);
   };
   return (
-    <ul>
+    <ul className="pagination">
       {Array.from({ length: Math.min(maxVisibleButtons, pages) })
         .map((_, index) => index + firstPage)
         .map((page) => (
           <li key={page}>
-            <button value={page} onClick={handleClick}>
+            <button
+              className={
+                page === currentPage
+                  ? "pagination__item--active "
+                  : "" + "pagination__item"
+              }
+              value={page}
+              onClick={handleClick}
+            >
               {page}
             </button>
           </li>

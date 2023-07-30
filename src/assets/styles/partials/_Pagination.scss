@@ -1,0 +1,24 @@
+@use "./variables";
+
+
+.pagination {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.pagination__item, .pagination__item--active {
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    background: variables.$g-4;
+    color: variables.$g-4;
+    cursor: pointer;
+}
+
+.pagination__item--active {
+    background: variables.$B-1;
+    color: variables.$B-1;
+}

@@ -112,13 +112,17 @@
         width: 100%;
         top: 40%;
         position: absolute;
-        justify-content: space-between;
+        justify-content: space-evenly;
         display: none;
-        p{
+        p, a{
+            display: flex;
             padding: 1rem 2rem;
             background: variables.$g-9;
             color: white;
             cursor: pointer;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
         }
     }
 }

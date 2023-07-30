@@ -4,7 +4,7 @@ import Title from "../Title/Title";
 import Filtro from "./Filtro/Filtro";
 import Form from "./Form/Form";
 import instagramImg from "../../assets/img/instagram-img.png";
-// import Card from "../Card/Cards";
+import Card from "../Card/Cards";
 // import JavaScriptIcon from "../Icons/JavaScriptIcon";
 // import HtmlIcon from "../Icons/HtmlIcon";
 import React from "react";
@@ -13,6 +13,9 @@ import Pagination from "../Pagination/Pagination";
 interface projetos {
   id: string;
   name: string;
+  language: string;
+  html_url: string;
+  homepage: string;
 }
 
 const ProjetosComponente = () => {
@@ -76,7 +79,14 @@ const ProjetosComponente = () => {
 
       <ul className="projects-card">
         {data?.map((repo) => (
-          <li key={repo.id}>{repo.name}</li>
+          <Card
+            key={repo.id}
+            title={repo.name}
+            content={[repo.language, ""]}
+            variant="third"
+            repoUrl={repo.html_url}
+            deployUrl={repo.homepage}
+          />
         ))}
       </ul>
 
