@@ -1,11 +1,11 @@
-import CleanCodeIcon from "../Icons/CleanCodeIcon.tsx";
-import LearningIcon from "../Icons/LearningIcon.tsx";
-import ResponsiveIcon from "../Icons/ResponsiveIcon.tsx";
-import Avatar from "./Avatar/Avatar.tsx";
-import Card from "../Card/Cards.tsx";
-import Title from "./Title/Title.tsx";
 import ScrollReveal from "scrollreveal";
 import React from "react";
+import ResponsiveIcon from "../Icons/ResponsiveIcon";
+import CleanCodeIcon from "../Icons/CleanCodeIcon";
+import LearningIcon from "../Icons/LearningIcon";
+import Title from "./Title/Title";
+import Avatar from "./Avatar/Avatar";
+import Card from "../Card/Cards";
 
 const Home = () => {
   React.useEffect(() => {

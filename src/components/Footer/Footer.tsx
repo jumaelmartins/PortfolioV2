@@ -1,5 +1,5 @@
-import EmailIcon from "../Icons/EmailIcon.tsx";
-import WhatsApp from "../Icons/WhatsApp.tsx";
+import EmailIcon from "../Icons/EmailIcon";
+import WhatsApp from "../Icons/WhatsApp";
 
 const Footer = () => {
   return (
@@ -7,13 +7,13 @@ const Footer = () => {
       <ul>
         <li>
           <i>
-            <EmailIcon />
+            <EmailIcon/>
           </i>
           <p>jumaelmartins@gmail.com</p>
         </li>
         <li>
           <i>
-            <WhatsApp />
+            <WhatsApp/>
           </i>
           <p>71996040206</p>
         </li>

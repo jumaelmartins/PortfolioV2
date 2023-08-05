@@ -1,11 +1,11 @@
-import ProjetosComponente from "../components/ProjetosComponente/ProjetosComponente.tsx"
+import ProjetosComponente from "../components/ProjetosComponente/ProjetosComponente";
 
 const Projetos = () => {
   return (
     <>
-    <ProjetosComponente />
+      <ProjetosComponente />
     </>
-  )
-}
+  );
+};
 
-export default Projetos
+export default Projetos;

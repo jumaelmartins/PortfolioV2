@@ -1,4 +1,4 @@
-import SuitCaseIcon from "../../Icons/SuitCaseIcon.tsx";
+import SuitCaseIcon from "../../Icons/SuitCaseIcon";
 
 const ExperienciaProfissional = () => {
   const experiencia = {
@@ -38,17 +38,22 @@ const ExperienciaProfissional = () => {
     <div className="professional-experience">
       <h3>Experiencia Profissional</h3>
       <ul>
-      {experiencia.experiencia.map((experiencia) => (
-        <li className="experience" key={experiencia.id}>
-          <div className="svg-icon">
-            <SuitCaseIcon/>
-          </div>
-          <div>
-            <h5 className="position">{experiencia.cargo} <b>({experiencia.inicio} - {experiencia.fim})</b></h5>
-            <p className="company">{experiencia.empresa}</p>
-          </div>
-        </li>
-      ))}
+        {experiencia.experiencia.map((experiencia) => (
+          <li className="experience" key={experiencia.id}>
+            <div className="svg-icon">
+              <SuitCaseIcon/>
+            </div>
+            <div>
+              <h5 className="position">
+                {experiencia.cargo}{" "}
+                <b>
+                  ({experiencia.inicio} - {experiencia.fim})
+                </b>
+              </h5>
+              <p className="company">{experiencia.empresa}</p>
+            </div>
+          </li>
+        ))}
       </ul>
     </div>
   );

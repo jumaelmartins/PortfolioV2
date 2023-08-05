@@ -1,12 +1,13 @@
-import Home from '../components/Home/Home.tsx';
-import NavBar from '../components/SideBar/NavBar.tsx';
+import Home from "../components/Home/Home";
+import NavBar from "../components/SideBar/NavBar";
 
 const Inicio = () => {
-  return (<>
-    <NavBar/>
-    <Home/>
-  </>
-  )
-}
+  return (
+    <>
+      <NavBar />
+      <Home />
+    </>
+  );
+};
 
 export default Inicio;

@@ -1,19 +1,19 @@
-import HomeIcon from "../Icons/HomeIcon.tsx";
-import ProjectsIcon from "../Icons/ProjectsIcon.tsx";
-import SkillIcon from "../Icons/SkillIcon.tsx";
+import HomeIcon from "../Icons/HomeIcon";
+import ProjectsIcon from "../Icons/ProjectsIcon";
+import SkillIcon from "../Icons/SkillIcon";
 
 const NavBar = () => {
   return (
-    <nav className="side-navbar" aria-role="side-navbar">
+    <nav className="side-navbar">
       <ul>
         <li>
-          <HomeIcon />
+          <HomeIcon/>
         </li>
         <li>
-          <SkillIcon />
+          <SkillIcon/>
         </li>
         <li>
-          <ProjectsIcon />
+          <ProjectsIcon/>
         </li>
       </ul>
     </nav>

@@ -1,11 +1,11 @@
-import CssIcon from "../../Icons/CssIcon.tsx";
-import GitHub from "../../Icons/GitHub.tsx";
-import HtmlIcon from "../../Icons/HtmlIcon.tsx";
-import JavaScriptIcon from "../../Icons/JavaScriptIcon.tsx";
-import NodeIcon from "../../Icons/NodeIcon.tsx";
-import ReactIcon from "../../Icons/ReactIcon.tsx";
-import SassIcon from "../../Icons/SassIcon.tsx";
-import TypescriptIcon from "../../Icons/TypescriptIcon.tsx";
+import CssIcon from "../../Icons/CssIcon";
+import GitHub from "../../Icons/GitHub";
+import HtmlIcon from "../../Icons/HtmlIcon";
+import JavaScriptIcon from "../../Icons/JavaScriptIcon";
+import NodeIcon from "../../Icons/NodeIcon";
+import ReactIcon from "../../Icons/ReactIcon";
+import SassIcon from "../../Icons/SassIcon";
+import TypescriptIcon from "../../Icons/TypescriptIcon";
 
 const Habilidades = () => {
   const masteredSkills = [
@@ -28,7 +28,9 @@ const Habilidades = () => {
         <h3>Já utilizo com maestria</h3>
         <ul className="skills__adquired__mastered">
           {masteredSkills.map((skill) => (
-            <li className="skill" key={skill.id}>{skill.skill}</li>
+            <li className="skill" key={skill.id}>
+              {skill.skill}
+            </li>
           ))}
         </ul>
       </div>
@@ -36,7 +38,9 @@ const Habilidades = () => {
         <h3>Aprendendo</h3>
         <ul className="skills__learning__newbie">
           {learningSkills.map((skill) => (
-            <li className="skill" key={skill.id}>{skill.skill}</li>
+            <li className="skill" key={skill.id}>
+              {skill.skill}
+            </li>
           ))}
         </ul>
       </div>

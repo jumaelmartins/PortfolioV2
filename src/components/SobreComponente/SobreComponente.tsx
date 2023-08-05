@@ -1,25 +1,21 @@
-import Card from "../Card/Cards.tsx";
-import Title from "../Title/Title.tsx";
-import PlusIcon from "../Icons/PlusIcon.tsx";
-import ExperienciaProfissional from "./ExperienciaProfissional/ExperienciaProfissional.tsx";
-import FormacaoAcademica from "./FormacaoAcademica/FormacaoAcademica.tsx";
-import Habilidades from "./Habilidades/Habilidades.tsx";
 import ScrollReveal from "scrollreveal";
 import React from "react";
+import Title from "../Title/Title";
+import Habilidades from "./Habilidades/Habilidades";
+import ExperienciaProfissional from "./ExperienciaProfissional/ExperienciaProfissional";
+import FormacaoAcademica from "./FormacaoAcademica/FormacaoAcademica";
+import Card from "../Card/Cards";
+import PlusIcon from "../Icons/PlusIcon";
 
-
-
-const sobreComponente = () => {
-
+const SobreComponente = () => {
   React.useEffect(() => {
-    ScrollReveal().reveal(".about__container", {duration: 100, reset: true});
-    ScrollReveal().reveal(".skill", {interval: 10, reset: true})
-    ScrollReveal().reveal(".experience", {interval: 10, reset: true})
-    ScrollReveal().reveal(".degree", {interval: 10, reset: true})
-    ScrollReveal().reveal(".card--about", {interval: 10, reset: true})
+    ScrollReveal().reveal(".about__container", { duration: 100, reset: true });
+    ScrollReveal().reveal(".skill", { interval: 10, reset: true });
+    ScrollReveal().reveal(".experience", { interval: 10, reset: true });
+    ScrollReveal().reveal(".degree", { interval: 10, reset: true });
+    ScrollReveal().reveal(".card--about", { interval: 10, reset: true });
   }, []);
 
-  
   return (
     <section id="about">
       <Title content="sobre" />
@@ -34,8 +30,8 @@ const sobreComponente = () => {
             <p>
               Me chamo Jumael Martins, sou um desenvolvedor front end web,
               comecei meus estudos por volta de mai/2022, no momento estou com
-              foco em react e typescript.
-              gosto de animes, musculação e acompanhar conteudos sobre technologia no youtube.
+              foco em react e typescript. gosto de animes, musculação e
+              acompanhar conteudos sobre technologia no youtube.
             </p>
           </div>
           <ul className="about__card-container">
@@ -64,4 +60,4 @@ const sobreComponente = () => {
   );
 };
 
-export default sobreComponente;
+export default SobreComponente;
