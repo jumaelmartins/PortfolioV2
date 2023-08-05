@@ -1,5 +1,5 @@
-import EmailIcon from "../Icons/EmailIcon";
-import WhatsApp from "../Icons/WhatsApp";
+import EmailIcon from "../icons/EmailIcon";
+import WhatsApp from "../icons/WhatsApp";
 
 const Footer = () => {
   return (

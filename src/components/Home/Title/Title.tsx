@@ -1,5 +1,5 @@
-import TwoStrokes from "../../Icons/TwoStrokes.tsx"
-import WhatsApp from "../../Icons/WhatsApp.tsx"
+import TwoStrokes from "../../icons/TwoStrokes.tsx"
+import WhatsApp from "../../icons/WhatsApp.tsx"
 
 
 const Title = () => {

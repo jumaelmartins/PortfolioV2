@@ -1,6 +1,6 @@
-import HomeIcon from "../Icons/HomeIcon";
-import ProjectsIcon from "../Icons/ProjectsIcon";
-import SkillIcon from "../Icons/SkillIcon";
+import HomeIcon from "../icons/HomeIcon";
+import ProjectsIcon from "../icons/ProjectsIcon";
+import SkillIcon from "../icons/SkillIcon";
 
 const NavBar = () => {
   return (

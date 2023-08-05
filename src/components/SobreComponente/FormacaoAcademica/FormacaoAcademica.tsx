@@ -1,4 +1,4 @@
-import GraduationIcon from "../../Icons/GraduationIcon";
+import GraduationIcon from "../../icons/GraduationIcon";
 
 const FormacaoAcademica = () => {
   const formacao = [

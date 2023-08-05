@@ -5,6 +5,7 @@
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
+    "rootDir": "src",
 
     /* Bundler mode */
     "moduleResolution": "Bundler",
@@ -20,6 +21,23 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": [
+    "src",
+    "src/**/*.ts",
+    "@types/**/*.d.ts",
+    "node_modules/axios",
+    "node_modules/redux-thunk"
+  ],
+  "exclude": [
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts",
+    "node_modules",
+    "obj",
+    "**/*.spec.ts"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

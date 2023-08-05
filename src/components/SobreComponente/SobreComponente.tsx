@@ -5,7 +5,7 @@ import Habilidades from "./Habilidades/Habilidades";
 import ExperienciaProfissional from "./ExperienciaProfissional/ExperienciaProfissional";
 import FormacaoAcademica from "./FormacaoAcademica/FormacaoAcademica";
 import Card from "../Card/Cards";
-import PlusIcon from "../Icons/PlusIcon";
+import PlusIcon from "../icons/PlusIcon";
 
 const SobreComponente = () => {
   React.useEffect(() => {
