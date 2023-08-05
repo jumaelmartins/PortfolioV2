@@ -10,12 +10,13 @@ import React from "react";
 
 
 const sobreComponente = () => {
+
   React.useEffect(() => {
     ScrollReveal().reveal(".about__container", {duration: 100, reset: true});
-    ScrollReveal().reveal(".skill", {interval: 100, reset: true})
-    ScrollReveal().reveal(".experience", {interval: 200, reset: true})
-    ScrollReveal().reveal(".degree", {interval: 200, reset: true})
-    ScrollReveal().reveal(".card--about", {interval: 200, reset: true})
+    ScrollReveal().reveal(".skill", {interval: 10, reset: true})
+    ScrollReveal().reveal(".experience", {interval: 10, reset: true})
+    ScrollReveal().reveal(".degree", {interval: 10, reset: true})
+    ScrollReveal().reveal(".card--about", {interval: 10, reset: true})
   }, []);
 
   
@@ -34,7 +35,7 @@ const sobreComponente = () => {
               Me chamo Jumael Martins, sou um desenvolvedor front end web,
               comecei meus estudos por volta de mai/2022, no momento estou com
               foco em react e typescript.
-              gosto de animes, musculação e dormi.
+              gosto de animes, musculação e acompanhar conteudos sobre technologia no youtube.
             </p>
           </div>
           <ul className="about__card-container">

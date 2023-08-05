@@ -9,8 +9,8 @@ import React from "react";
 
 const Home = () => {
   React.useEffect(() => {
-    ScrollReveal().reveal(".home-card", {duration: 800, reset: true});
-    ScrollReveal().reveal(".effect-1", {interval: 200, reset: true})
+    ScrollReveal().reveal(".home-card", { duration: 300, reset: true });
+    ScrollReveal().reveal(".effect-1", { interval: 100, reset: true });
   }, []);
 
   const info = {
@@ -33,7 +33,7 @@ const Home = () => {
         id: 3,
         title: "Aprendizado Continuo",
         content:
-          "Aprendizado continuo através de CTD (Código todos os dias), participação em comunidades de desenvolvimento, leitura de documentação e etc.",
+          "Aprendizado continuo mesclando o estudo diario com a pratica atraves de codigo, participação em comunidades de desenvolvimento, leitura de documentação e etc.",
         icon: <LearningIcon />,
       },
     ],

@@ -20,7 +20,6 @@ const Pagination = ({ total, limit, offset, setOffset }: paginationTypes) => {
   const handleClick = (event: any) => {
     const value = event.target.value
     setOffset((value - 1) * limit);
-    console.log(currentPage);
   };
   return (
     <ul className="pagination">
