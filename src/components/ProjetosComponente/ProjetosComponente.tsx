@@ -16,6 +16,7 @@ interface projetos {
   language: string;
   html_url: string;
   homepage: string;
+  description: string;
 }
 
 const ProjetosComponente = () => {
@@ -29,11 +30,14 @@ const ProjetosComponente = () => {
       const response = await fetch(
         "https://api.github.com/users/jumaelmartins/repos"
       );
-      const json = await response.json();
+      const json: projetos[] = await response.json();
+
+      const filteredProjects = json.filter(project => project.description && project.description.includes("<\/>"))
       const start = offset;
       const end = offset + limit;
-      setTotal(json.length);
-      setData(json.slice(start, end));
+
+      setData(filteredProjects.slice(start, end))
+
     };
     dataFetch();
   }, [offset]);
