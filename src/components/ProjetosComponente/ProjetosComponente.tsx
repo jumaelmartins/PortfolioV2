@@ -22,7 +22,7 @@ interface projetos {
 const ProjetosComponente = () => {
   const [data, setData] = React.useState<null | projetos[]>(null);
   const [offset, setOffset] = React.useState(0);
-  const [total, setTotal] = React.useState(6);
+  const total = 6;
   const limit = 6;
 
   React.useEffect(() => {
@@ -32,12 +32,13 @@ const ProjetosComponente = () => {
       );
       const json: projetos[] = await response.json();
 
-      const filteredProjects = json.filter(project => project.description && project.description.includes("<\/>"))
+      const filteredProjects = json.filter(
+        (project) => project.description && project.description.includes("</>")
+      );
       const start = offset;
       const end = offset + limit;
 
-      setData(filteredProjects.slice(start, end))
-
+      setData(filteredProjects.slice(start, end));
     };
     dataFetch();
   }, [offset]);
